@@ -49,14 +49,16 @@ App
 * Go to [Cloud9](https://console.aws.amazon.com/cloud9/) environment. and Click Open IDE
 
 
-AWS Cloud9 사용자는 Node(v10.24.1)의 EOS메시지를 원하지 않은경우, 아래 Node와 AWS CDK 업데이트를 참고하십시오. 
-기본설치된 node버전 특정버전 설치경우 혹은 node를 최신버전으로 설치합니다.
+AWS Cloud9 사용자는 Node(v10.24.1)의 EOS메시지를 원하지 않은경우, 아래 Node와 AWS CDK 업데이트를 참고하십시오. <br>
+기본설치된 node를 특정버전으로 설치할 경우(예, v14.5.0로 설치시)<br> 
 
-* 예) v14.5.0 설치시 - nvm install 14.5.0
+* 예) v14.5.0 설치시 -> nvm install 14.5.0
+
+Node를 최신버전으로 설치합니다.
 
 `nvm install node`
 
-AWS Cloud9 사용자는 aws-cdk 최신버전으로 설치합니다.
+AWS Cloud9 사용자는 aws-cdk 최신버전으로 설치합니다.<br>
 CDK버전은 최신버전 설치를 추천드립니다.(강제옵션이 필요한 경우 option --force)
 
 `npm install -g aws-cdk --force`
