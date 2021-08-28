@@ -42,20 +42,30 @@ App
 
 앱은 Jupyter 서버, 커널 또는 TensorBoard 애플리케이션일 수 있습니다. 동일한 노드에서 여러 앱을 실행할 수 있습니다.
 
-## Lab Steps
 
-Step 0: AWS Cloud9 사용자는, aws-cdk 최신버전으로 설치합니다.
-CDK버전은 최신버전 설치를 추천드립니다.(강제옵션이 필요한 경우 option --force)
+## Updated AWS Cloud9
 
 * Sign in to the [AWS Management Console](https://console.aws.amazon.com/)
 * Go to [Cloud9](https://console.aws.amazon.com/cloud9/) environment. and Click Open IDE
- 
-`npm install -g aws-cdk --force`
 
-기본설치된 node버전 v10.24.1의 EOS 안내를 원치않는 경우, node를 최신버전으로 설치합니다.
-(Node v10.24.1은 단종되었으며 2021-09-01 이후의 새 릴리스에서는 더 이상 지원되지 않습니다)
+
+AWS Cloud9 사용자는 Node(v10.24.1)의 EOS메시지를 원하지 않은경우, 아래 Node와 AWS CDK 업데이트를 참고하십시오. 
+기본설치된 node버전 특정버전 설치경우 혹은 node를 최신버전으로 설치합니다.
+
+* 예) v14.5.0 설치시 - nvm install 14.5.0
 
 `nvm install node`
+
+AWS Cloud9 사용자는 aws-cdk 최신버전으로 설치합니다.
+CDK버전은 최신버전 설치를 추천드립니다.(강제옵션이 필요한 경우 option --force)
+
+`npm install -g aws-cdk --force`
+
+업데이트된 Node와 CDK 버전이 제대로 나오는지 확인합니다.
+`node -v`
+`cdk --version`
+
+## Lab Steps
 
 Step 1: 다음 명령줄을 사용하여 로컬 디렉토리에 대한 Git 리포지토리를 확인하십시오.
 
