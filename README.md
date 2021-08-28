@@ -59,7 +59,7 @@ CDK버전은 최신버전 설치를 추천드립니다.(강제옵션이 필요�
 
 Step 1: 다음 명령줄을 사용하여 로컬 디렉토리에 대한 Git 리포지토리를 확인하십시오.
 
-`git clone https://github.com/aws-samples/aws-cdk-sagemaker-studio`
+`git clone https://github.com/comeddy/aws-cdk-sagemaker-studio`
 
 Step 2: 디렉터리를 이전 단계에서 만든 새 디렉터리로 변경합니다.
 
