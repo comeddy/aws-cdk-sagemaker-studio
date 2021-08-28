@@ -16,6 +16,7 @@ Pre-requisites:
 * Python 3.6+
 * AWS CDK
 * Git
+* Cloud9
 * Knowledge on how Amazon Sagemaker Studio works.
 
 ## Knowledge on how Amazon Sagemaker Studio works
@@ -43,6 +44,19 @@ App
 
 ## Lab Steps
 
+Step 0: AWS Cloud9 사용자는, aws-cdk 최신버전으로 설치합니다.
+CDK버전은 최신버전 설치를 추천드립니다.(강제옵션이 필요한 경우 option --force)
+
+* Sign in to the [AWS Management Console](https://console.aws.amazon.com/)
+* Go to [Cloud9](https://console.aws.amazon.com/cloud9/) environment. and Click Open IDE
+ 
+`npm install -g aws-cdk --force`
+
+기본설치된 node버전 v10.24.1의 EOS 안내를 원치않는 경우, node를 최신버전으로 설치합니다.
+(Node v10.24.1은 단종되었으며 2021-09-01 이후의 새 릴리스에서는 더 이상 지원되지 않습니다)
+
+`nvm install node`
+
 Step 1: 다음 명령줄을 사용하여 로컬 디렉토리에 대한 Git 리포지토리를 확인하십시오.
 
 `git clone https://github.com/aws-samples/aws-cdk-sagemaker-studio`
@@ -65,12 +79,16 @@ Step 5: 필요한 종속성을 설치합니다:
 
 `pip3 install -r requirements.txt`
 
-Step 6: 템플릿을 합성합니다. AWS CDK 앱은 코드를 사용하여 인프라를 정의하고 실행 시 생성하거나
+Step 6: AWS CDK가 배포수행하는데 필요한 자원(asset)을 프로비저닝하도록 브트스트랩 스택을 설치합니다.
+
+`cdk bootstrap`
+
+Step 7: 템플릿을 합성합니다. AWS CDK 앱은 코드를 사용하여 인프라를 정의하고 실행 시 생성하거나
 애플리케이션에 정의된 각 스택에 대한 AWS CloudFormation 템플릿을 "합성"합니다.
 
 `cdk synthesize`
 
-Step 7: 솔루션을 배포합니다.
+Step 8: 솔루션을 배포합니다.
 
 `cdk deploy`
 
@@ -105,6 +123,10 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 ## License
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
+
+This code has been tested and verified to run with AWS CDK 1.120.0 (build 6c15150)
+
+
 
 
 
