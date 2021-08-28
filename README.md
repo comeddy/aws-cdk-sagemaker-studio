@@ -16,7 +16,7 @@ Pre-requisites:
 * Python 3.6+
 * AWS CDK
 * Git
-* Cloud9
+* AWS Cloud9
 * Knowledge on how Amazon Sagemaker Studio works.
 
 ## Knowledge on how Amazon Sagemaker Studio works
@@ -43,7 +43,7 @@ App
 앱은 Jupyter 서버, 커널 또는 TensorBoard 애플리케이션일 수 있습니다. 동일한 노드에서 여러 앱을 실행할 수 있습니다.
 
 
-## Updated AWS Cloud9
+## Started AWS Cloud9
 
 * Sign in to the [AWS Management Console](https://console.aws.amazon.com/)
 * Go to [Cloud9](https://console.aws.amazon.com/cloud9/) environment. and Click Open IDE
