@@ -59,7 +59,9 @@ Node를 최신버전으로 설치합니다.
 `nvm install node`
 
 AWS Cloud9 사용자는 aws-cdk 최신버전으로 설치합니다.<br>
-CDK버전은 최신버전 설치를 추천드립니다.(강제옵션이 필요한 경우 option --force)
+CDK버전은 최신버전 설치를 추천드립니다.(강제옵션이 필요한 경우 option --force) <br>
+
+* 예) npm install -g aws-cdk --force
 
 `npm install -g aws-cdk`
 
