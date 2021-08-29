@@ -48,8 +48,7 @@ App
 * Sign in to the [AWS Management Console](https://console.aws.amazon.com/)
 * Go to [Cloud9](https://console.aws.amazon.com/cloud9/) environment. and Click Open IDE
 
-
-AWS Cloud9 사용자는 Node(v10.24.1)의 EOS메시지를 원하지 않은경우, 아래 Node와 AWS CDK 업데이트를 참고하십시오. <br>
+AWS Cloud9 사용시 Node(v10.24.1)의 EOS메시지를 원하지 않은경우, 아래 Node와 AWS CDK 업데이트를 참고하십시오. <br>
 기본설치된 node를 특정버전으로 설치할 경우(예, v14.5.0로 설치시)<br> 
 
 * 예) v14.5.0 설치시 -> nvm install 14.5.0
@@ -58,10 +57,10 @@ Node를 최신버전으로 설치합니다.
 
 `nvm install node`
 
-AWS Cloud9 사용자는 aws-cdk 최신버전으로 설치합니다.<br>
-CDK버전은 최신버전 설치를 추천드립니다.(강제옵션이 필요한 경우 option --force) <br>
+AWS Cloud9 사용시 aws-cdk 최신버전으로 설치합니다.<br>
+AWS CDK의 버전은 최신버전설치를 권고드립니다.(강제옵션이 필요한 경우 option --force)<br>
 
-* 예) npm install -g aws-cdk --force
+* 예) npm install -g aws-cdk
 
 `npm install -g aws-cdk`
 
@@ -137,8 +136,7 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 
 ## License
 
-This library is licensed under the MIT-0 License. See the LICENSE file.
-
+This library is licensed under the MIT-0 License. See the LICENSE file.<br>
 This code has been tested and verified to run with AWS CDK 1.120.0 (build 6c15150)
 
 
